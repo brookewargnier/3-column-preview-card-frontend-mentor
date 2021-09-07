@@ -1,0 +1,162 @@
+/*****************************************************************************/
+/******************************* FOUNDATION **********************************/
+/*****************************************************************************/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*****************************************************************************/
+/******************************* VARIABLES ***********************************/
+/*****************************************************************************/
+
+:root {
+  --primary-color: hsl(31, 77%, 52%);
+  --secondary-color: hsl(184, 100%, 22%);
+  --tertiary-color: hsl(179, 100%, 13%);
+  --transparent-white-color: hsla(0, 0%, 100%, 0.75);
+  --light-grey-color: hsl(0, 0%, 95%);
+  --font-main: 'Lexend Deca', sans-serif;
+  --font-secondary: 'Big Shoulders Display', cursive;
+  --font-weight-main-medium: 400;
+  --font-weight-second-bold: 700;
+}
+
+/*****************************************************************************/
+/**************************** READY CLASSES **********************************/
+/*****************************************************************************/
+
+.btn-1 {
+  margin: 0 0 3.03125rem 3rem;
+  width: 9.125rem;
+  height: 3rem;
+  background-color: var(--light-grey-color);
+  border-radius: 1.5625rem;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9375em;
+  font-family: var(--font-main);
+  font-weight: var(--font-weight-main-medium);
+}
+
+.btn-1:hover {
+  background-color: transparent;
+  border: 0.125rem solid var(--light-grey-color);
+  color: var(--light-grey-color);
+}
+
+.btn-1:active {
+  background-color:  hsla(0, 0%, 100%, .15);
+  border: 0.125rem solid var(--light-grey-color);
+  color: var(--light-grey-color);
+}
+.bg-grey {
+  background-color: var(--light-grey-color);
+}
+
+/*****************************************************************************/
+/**************************** GENERAL STYLES *********************************/
+/*****************************************************************************/
+
+h1 {
+  font-size: 2.5em;
+  font-family: var(--font-secondary);
+  font-weight: var(--font-weight-second-bold);
+  text-transform: uppercase;
+  padding-left: 3.03125rem;
+  color: var(--light-grey-color);
+}
+
+p {
+  font-size: 0.9375em;
+  font-family: var(--font-main);
+  font-weight: var(--font-weight-main-medium);
+  padding: 0 3.03125rem 0 3.03125rem;
+  color: var(--transparent-white-color);
+}
+
+.body__container {
+  margin: 6rem;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+
+@media (min-width: 940px) {
+
+  .main__container {
+    flex-direction: row;
+  }
+}
+/*****************************************************************************/
+/********************************** SUDANS  **********************************/
+/*****************************************************************************/
+
+
+.sedans__container {
+  width: 20.4375rem;
+  height: 27.625rem;
+  background-color: var(--primary-color);
+  border-radius: 8px 8px 0 0;
+}
+
+.sedans__icon {
+    margin: 3.03125rem 0 0 3.03125rem;
+}
+
+@media (min-width: 940px) {
+  .sedans__container {
+    border-radius: 8px 0 0 8px;
+  }
+}
+/*****************************************************************************/
+/************************************ SUVS ***********************************/
+/*****************************************************************************/
+
+
+.suvs__container {
+  width: 20.4375rem;
+  height: 27.625rem;
+  background-color: var(--secondary-color);
+  border-radius: 0px;
+}
+
+.suvs__icon {
+    margin: 3.03125rem 0 0 3.03125rem;
+}
+
+
+/*****************************************************************************/
+/********************************** LUXERY ***********************************/
+/*****************************************************************************/
+
+
+.luxery__container {
+  width: 20.4375rem;
+  height: 27.625rem;
+  background-color: var(--tertiary-color);
+  border-radius: 0 0 8px 8px;
+}
+
+.luxery__icon {
+    margin: 3.03125rem 0 0 3.03125rem;
+}
+
+
+@media (min-width: 940px) {
+  .luxery__container {
+    border-radius: 0 8px 8px 0;
+  }
